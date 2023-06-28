@@ -1,0 +1,51 @@
+---
+---
+
+<div class="header-container">
+    <h1 class="header-title">Imagine Software Consultancy</h1>
+</div>
+
+<style>
+    :root {
+        --black: #2C2E43;
+        --blaack: #000000;
+        --darkGray: #595260;
+        --lightGray: #B2B1B9;
+        --yellow: #FFD523;
+    }
+
+    @keyframes rainbow { 
+        0%{background-position:0%}
+        25%{background-position:50%;text-shadow: 0px 0px 40px var(--yellow);}
+        50%{background-position:100%}
+        75%{background-position:150%}
+        100%{background-position:200%}
+
+    }
+
+    .header-container {
+        width:100vw;
+        display:flex;
+        flex-direction:row;
+        background:var(--black);
+        align-items:center;
+    }
+    .header-title {
+        background: radial-gradient(ellipse at center, var(--yellow) 0, var(--darkGray) 45%, var(--yellow) 95%);
+        background-size: 200% 200%;
+        background-position: 150%;
+        /* background-clip: text; */
+        -webkit-background-clip:text;
+        color:transparent;
+        font-size:4rem;
+        text-align:center;
+        transition: color .2s ease-in-out;
+        font-weight:900;
+    }
+
+    .header-title:hover{
+        animation: rainbow 2s linear infinite;
+    }
+
+    
+</style>
