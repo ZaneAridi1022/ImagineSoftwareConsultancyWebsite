@@ -4,36 +4,33 @@
 <div class="title-container">
     <div class="rows">
         <img src="/assets/imageLogo2.png" class="logo"/>
-        <p class="header-title">Imagine Software Consultancy</p>
-    </div>
-</div>
-<div class="navbar">
-    <a href="/" class="button">
+        <!-- <p class="header-title">Imagine Software Consultancy</p> -->
+        <a href="/" class="button">
         <svg>
             <rect x="0" y="0" fill="none" width="100%" height="100%"/>
         </svg>
         Home 
-    </a>
-    <a href="/aboutus" class="button">
-        <svg>
-            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-        </svg>
-        About Us 
-    </a>
-    <a href="/" class="button">
-        <svg>
-            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-        </svg>
-        Comming Soon
-    </a>
-    <a href="/" class="button">
-        <svg>
-            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
-        </svg>
-        Comming Soon
-    </a>
+        </a>
+        <a href="/aboutus" class="button">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+            </svg>
+            About Us 
+        </a>
+        <a href="/" class="button">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+            </svg>
+            Comming Soon
+        </a>
+        <a href="/" class="button">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+            </svg>
+            Comming Soon
+        </a>
+    </div>
 </div>
-
 <style>
     :root {
         --black: #343432;
@@ -44,46 +41,20 @@
         --yellow: #FFD523;
     }
 
-    @keyframes rainbow { 
-        0%{background-position:0%}
-        25%{background-position:50%;text-shadow: 0px 0px 20px var(--yellow);}
-        50%{background-position:100%}
-        75%{background-position:150%}
-        100%{background-position:200%}
-
-    }
+   
 
     .title-container {
         width:100vw;
         display:block;
         background:var(--black);
     }
-    .header-title {
-        background: radial-gradient(ellipse at center, var(--yellow) 0, var(--darkGray) 45%, var(--yellow) 95%);
-        background-size: 200% 200%;
-        background-position: 150%;
-        -webkit-background-clip:text;
-        -webkit-text-stroke-width: .001px;
-        -webkit-text-stroke-color: rgba(0,0,0,.2);
-        color:transparent;
-        font-size:3rem;
-        text-align:center;
-        transition: color .2s ease-in-out;
-        font-weight:900;
-        letter-spacing: 3px;
-        width:100%;
-        margin:0;
-    }
-
-    .header-title:hover{
-        animation: rainbow 10s linear infinite;
-    }
+    
 
     .navbar {
         width:100vw;
         display:flex;
         flex-direction:row;
-        background:var(--darkGray);
+        background:var(--black);
     }
 
     .button {
@@ -150,8 +121,5 @@
         justify-content:center;
         align-items:center;
         background:var(--black);
-    }
-
-
-    
+    }    
 </style>
