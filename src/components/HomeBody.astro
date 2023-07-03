@@ -2,24 +2,26 @@
 import Card from './Card.astro';
 
 const title1 = "Vision";
-const vission = "Our vision is to live in a world we want to live in rather than a world we have to live in.";
+const vission = "To live in the world we want to live in rather than the world as it currently stands. One thing we hate is the term 'industry standard.' We want to provide services that are truly the best in quality, the best in price, and the best in customer service. ";
 
 const title2 = "Services";
-const services = "We offer custom software development for anything you can envision";
+const services = "We offer custom software development for anything you can envision. Websites, web apps, mobile apps, virtual reality apps, artifical intellegence solutions, cloud infrastructure, and more... If you can imagine it, we will build it!";
 
 const title3 = "Why Us?";
+const why = "We have one major philosophy at our consultancy that you have probably never heard of: 'Treat others the way you want to be treated.' If you help us make our vision into reality we will do the same for you. You will be part of our development process from beggining to end.";
 
 const title4 = "Contact";
+const contact = "Feel free to reach out to us via email, phone, or schedule a meeting with me directly on my calender! We will offer you a free quote detailing how much development on your project will cost. We are also flexible with different payment options."
 ---
 
 <div class="mainBody">
     <p class="motto">Imagine Software Consultancy</p> 
-    <p class="header-title">~ Bringing your imagination to life ~</p>
+    <p class="headerTitle">~ Bringing your imagination to life ~</p>
     <div class="cardContainer">
         <Card title={title1} body={vission}/>
         <Card title={title2} body={services}/>
-        <Card title={title3}/>
-        <Card title={title4}/>
+        <Card title={title3} body={why}/>
+        <Card title={title4} body={contact}/>
     </div>
 </div>
 
@@ -46,7 +48,8 @@ const title4 = "Contact";
         text-align:center;
         -webkit-background-clip:text;
         color:transparent;
-        font-weight:900;
+        font-weight:600;
+        color:var(--yellow);
     }
 
     .cardContainer {
@@ -64,7 +67,7 @@ const title4 = "Contact";
 
     }
 
-    .header-title {
+    .headerTitle {
         padding:5vh;
         background: radial-gradient(ellipse at center, var(--yellow) 0, var(--darkGray) 45%, var(--yellow) 95%);
         background-size: 200% 200%;
@@ -82,7 +85,7 @@ const title4 = "Contact";
         margin:0;
     }
 
-    .header-title:hover{
+    .headerTitle:hover{
         animation: rainbow 10s linear infinite;
     }
 </style>
