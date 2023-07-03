@@ -1,0 +1,57 @@
+---
+import Card from './Card.astro';
+
+const title1 = "Vission";
+const vission = "Our vission is to live in a world we want to live in rather than a world we have to live in.";
+
+const title2 = "Services";
+const services = "bullshit";
+
+const title3 = "Why Us?";
+
+const title4 = "Contact";
+---
+
+<div class="mainBody">
+    <p class="motto">~ Bringing your imagination to life ~</p>
+    <div class="cardContainer">
+        <Card title={title1} body={vission}/>
+        <Card title={title2}/>
+        <Card title={title3}/>
+        <Card title={title4}/>
+    </div>
+</div>
+
+<style>
+    :root {
+        --black: #2C2E43;
+        --blaack: #000000;
+        --darkGray: #595260;
+        --lightGray: #B2B1B9;
+        --yellow: #FFD523;
+    }
+
+	.mainBody {
+		background: var(--black);
+		width:100vw;
+		height:90vh;
+        margin:0;
+
+	}
+    .motto {
+        background:linear-gradient(135deg, var(--yellow),var(--lightGray));
+        margin:0;
+        font-size:2.5rem;
+        text-align:center;
+        padding:5vh;
+        -webkit-background-clip:text;
+        color:transparent;
+        text-decoration:italic;
+    }
+
+    .cardContainer {
+        align-items:center;
+        flex-direction:row;
+        display:flex;
+    }
+</style>
