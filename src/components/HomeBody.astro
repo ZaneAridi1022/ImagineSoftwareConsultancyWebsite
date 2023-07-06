@@ -16,13 +16,13 @@ const contact = "Feel free to reach out to us via email, phone, or schedule a me
 
 <div class="mainBody">
     <p class="motto">Imagine Software Consultancy</p> 
-    <p class="headerTitle">~ Bringing your imagination to life ~</p>
     <div class="cardContainer">
         <Card title={title1} body={vission}/>
         <Card title={title2} body={services}/>
         <Card title={title3} body={why}/>
         <Card title={title4} body={contact}/>
     </div>
+    <p class="headerTitle">~ Bringing your imagination to life ~</p>
 </div>
 
 <style>
@@ -35,21 +35,26 @@ const contact = "Feel free to reach out to us via email, phone, or schedule a me
     }
 
 	.mainBody {
-		background: var(--black);
 		width:100vw;
-		height:90vh;
+		height:75vh;
         margin:0;
 
 	}
     .motto {
-        background:linear-gradient(90deg, var(--yellow), var(--lightGray));
+        background:linear-gradient(var(--yellow) 0, var(--black) 60%);
         margin:0;
         font-size:3rem;
         text-align:center;
         -webkit-background-clip:text;
         color:transparent;
         font-weight:600;
-        color:var(--yellow);
+        padding-top:3vh;
+        padding-bottom:6vh;
+        transition: all .5s ease-in;
+    }
+
+    .motto:hover {
+        text-shadow: 0px 0px 2px rgb(255, 213, 35,.3);
     }
 
     .cardContainer {
@@ -81,7 +86,6 @@ const contact = "Feel free to reach out to us via email, phone, or schedule a me
         transition: color .2s ease-in-out;
         font-weight:900;
         letter-spacing: 3px;
-        /* width:100%; */
         margin:0;
     }
 
